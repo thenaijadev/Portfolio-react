@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+.intro_dark{
+    color: gainsboro;
+}
+
+.description{
+    padding-right:30% ;
+    font-family: 'Edu SA Beginner', cursive;
+}
