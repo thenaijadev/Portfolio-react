@@ -1,5 +1,4 @@
 .Buttons{
-    height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -7,3 +6,12 @@
     position: absolute;
     right: 30px;
 }
+
+@media only screen and (max-width: 600px) {
+   .Buttons{
+     position: absolute;
+     bottom: 8%;
+     right: 2%;
+    }
+  
+  }

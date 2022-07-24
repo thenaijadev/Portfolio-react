@@ -1,15 +1,23 @@
 import Classes from "./HomeIntroduction.module.css";
 import TypeWriterEffect from "react-typewriter-effect";
-import { useState } from "react";
-
+import useWindowDimensions from "../../Helpers/WindowDimentions";
+import { getWindowDimensions } from "../../Helpers/WindowDimentions";
 const HomeIntroduction = (props) => {
+  const { height, width } = useWindowDimensions();
+  const fontSize = width * 0.052;
+  const fontSizeMobile = width * 0.1;
   return (
     <div className={Classes.intro}>
       <TypeWriterEffect
+        className={Classes.TypeWriterEffect}
         textStyle={{
+          marginLeft: `${width > 900 ? null : "40"}px`,
+          marginTop: `${width > 900 ? "-70" : "-100"}px`,
+          marginBottom: `${width > 900 ? null : "30"}px`,
           fontFamily: "'Monaco', 'Courier New', monospace",
-          fontSize: "400%",
-          color: `${props.isDark ? "aliceblue" : "black"}`,
+          fontSize: `${width > 900 ? fontSize : fontSizeMobile}px`,
+          // textAlign: `${width > 900 ? "left" : "center"}`,
+          color: `${props.isDark ? "White" : "black"}`,
           //
         }}
         startDelay={100}

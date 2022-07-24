@@ -2,9 +2,34 @@
 
 .intro_dark{
     color: gainsboro;
+    
 }
 
 .description{
     padding-right:30% ;
     font-family: 'Edu SA Beginner', cursive;
 }
+
+@media only screen and (max-width: 900px) {
+    .description {
+    font-size: 100%;
+    margin-left: 40px;
+    }
+    .intro{
+        margin-top: 10%;
+    }
+  }
+
+@media only screen and (max-width: 450px) {
+  
+    .intro{
+        margin-top: -30%;
+    }
+    .TypeWriterEffect{
+       margin-left: 40px;
+    }  
+    .description {
+    font-size: 100%;
+    margin-left: 40px;
+    }
+  }
